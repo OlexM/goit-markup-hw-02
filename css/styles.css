@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto", "FF DIN", sans-serif;
   color: var(--body-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -17,13 +14,14 @@ body {
   --cornflower: #e7e9fc;
 }
 /* --------HEADER--------- */
+.header {
+  border-bottom: 1px solid var(--cornflower);
+}
 .header a {
   text-decoration: none;
 }
 .logo-text {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -45,7 +43,8 @@ body {
 .nav-item-text:focus {
   color: var(--ocean);
 }
-.nav-item-text:active {
+.nav-item-text:active,
+.active {
   color: var(--ocean);
   border-bottom: 4px solid var(--ocean);
   border-radius: 2px;
@@ -68,8 +67,7 @@ body {
 .hero {
   background-color: var(--navy-blue);
 }
-.hero h1 {
-  font-weight: 700;
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--white);
@@ -89,35 +87,39 @@ body {
 .features-list {
   list-style-type: none;
 }
-.features h3 {
+.features-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-blue);
 }
 /* --------DOING--------- */
-.doing h2 {
-  font-weight: 700;
+.doing-title {
   font-size: 36px;
   line-height: 1.11;
   color: var(--navy-blue);
   text-transform: capitalize;
 }
-.doing ul {
+.doing-list {
   list-style-type: none;
+}
+.doing-image {
+  border: 1px solid var(--cornflower);
 }
 /* --------TEAM--------- */
-.team h2 {
-  font-weight: 700;
+.team {
+  background-color: var(--cloud);
+}
+.team-title {
   font-size: 36px;
   line-height: 1.11;
   color: var(--navy-blue);
   text-transform: capitalize;
 }
-.team ul {
+.team-list {
   list-style-type: none;
 }
-.team h3 {
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -135,8 +137,6 @@ body {
 }
 .f-logo-text {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -165,7 +165,7 @@ body {
   list-style-type: none;
 }
 .filters-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "FF DIN", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -187,6 +187,9 @@ body {
 /* --------EXAMPLES--------- */
 .examples-list {
   list-style-type: none;
+}
+.examples-item {
+  border: 1px solid var(--cornflower);
 }
 .examples-link {
   text-decoration: none;
